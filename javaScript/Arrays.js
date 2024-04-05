@@ -157,8 +157,8 @@
 let arr=["Raj","anand","manideep","bharath"];
 //console.log(arr.sort());
 //& EXAMPLE 2
-let brr=[101,0,45,9,67];
-console.log(brr.sort());
+// let brr=[101,0,45,9,67];
+// console.log(brr.sort());
 //& EXAMPLE 3
 //? ASENDING ORDER
 // console.log(brr.sort((a,b)=>{
