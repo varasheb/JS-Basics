@@ -118,3 +118,21 @@
 //     featchwater(count-1)
 // }
 // featchwater(4)
+
+
+//  reverse  the word
+let str="hi how are you"
+
+function reverseTheString(str){
+    let rev="";
+let arr=str.split(" ")
+for(let words of arr){
+for(let ele of words ){
+ rev=ele+rev
+}
+rev=rev+" "
+}
+console.log(rev)
+}
+
+reverseTheString(str)
