@@ -23,32 +23,32 @@ const Module = (() => {
 //   Ensures that a class has only one instance and provides a global point of access to it.
 //   Useful for managing shared resources and global configurations.
 
-  const Singleton = (() => {
-    let instance;
+//   const Singleton = (() => {
+//     let instance;
   
-    function createInstance() {
-      return {
+//     function createInstance() {
+//       return {
 
-        name: 'Singleton Instance',
-        log: () => console.log('Singleton method called')
-      };
-    }
+//         name: 'Singleton Instance',
+//         log: () => console.log('Singleton method called')
+//       };
+//     }
   
-    return {
-      getInstance: () => {
-        if (!instance) {
-          instance = createInstance();
-        }
-        return instance;
-      }
-    };
-  })();
+//     return {
+//       getInstance: () => {
+//         if (!instance) {
+//           instance = createInstance();
+//         }
+//         return instance;
+//       }
+//     };
+//   })();
   
-  const singletonInstance1 = Singleton.getInstance();
-  const singletonInstance2 = Singleton.getInstance();
+//   const singletonInstance1 = Singleton.getInstance();
+//   const singletonInstance2 = Singleton.getInstance();
   
-  console.log(singletonInstance1 === singletonInstance2);
-  singletonInstance1.log(); 
+//   console.log(singletonInstance1 === singletonInstance2);
+//   singletonInstance1.log(); 
   
   //!Factory Pattern
 //   Encapsulates object creation logic into a separate factory method.
@@ -71,35 +71,27 @@ const Module = (() => {
   
 //   console.log(product.name); 
 
-  //!Observer Pattern
-//   Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
-//   Used in event handling systems and for implementing distributed event handling systems
+ //! Decorator Pattern: Adds new functionality to an existing object without altering its structure. It's useful for adding features to objects dynamically.
+class Car {
+    constructor() {
+        this.price = 10000;
+    }
 
-// class Subject {
-//     constructor() {
-//       this.observers = [];
-//     }
-  
-//     addObserver(observer) {
-//       this.observers.push(observer);
-//     }
-  
-//     notifyObservers(data) {
-//       this.observers.forEach(observer => observer.update(data));
-//     }
-//   }
-  
-//   class Observer {
-//     update(data) {
-//       console.log('Observer updated with data:', data);
-//     }
-//   }
-  
-//   const subject = new Subject();
-//   const observer1 = new Observer();
-//   const observer2 = new Observer();
-  
-//   subject.addObserver(observer1);
-//   subject.addObserver(observer2);
-  
-//   subject.notifyObservers('Data to notify');
+    getPrice() {
+        return this.price;
+    }
+}
+
+function carWithAC(car) {
+    car.price += 2000;
+    return car;
+}
+
+function carWithPowerLocks(car) {
+    car.price += 500;
+    return car;
+}
+
+let myCar = new Car();
+myCar = carWithAC(myCar);
+myCar = carWithPowerLocks(myCar);

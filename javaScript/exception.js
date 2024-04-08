@@ -1,4 +1,16 @@
 //! Example
+function divide(a, b) {
+    try {
+      return a / b;
+    } catch (error) {
+      console.error('An error occurred:', error.message);
+    } finally {
+      console.log('Division operation complete.');
+    }
+  }
+
+
+
 // function divide(a, b) {
 //     try {
 //       if (b === 0) {
@@ -13,7 +25,7 @@
 //   }
   
 //   console.log(divide(10, 2)); 
-//   console.log(divide(10, 0)); 
+  console.log(divide(10, 0)); 
   
   //! working with json parsing errors
 //   const invalidJsonString = '{"name": "John", "age": }';
@@ -35,14 +47,14 @@
 
   
 //! custom exception
-function validateInput(input) {
-    if (input === null || input === undefined || input === '') {
-      throw new Error('Input cannot be empty');
-    }
-  }
+// function validateInput(input) {
+//     if (input === null || input === undefined || input === '') {
+//       throw new Error('Input cannot be empty');
+//     }
+//   }
   
-  try {
-    validateInput('');
-  } catch (error) {
-    console.error('Validation error:', error.message);
-  }
+//   try {
+//     validateInput('');
+//   } catch (error) {
+//     console.error('Validation error:', error.message);
+//   }
