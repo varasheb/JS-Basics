@@ -100,3 +100,32 @@ console.log("hii");
 //? if the character is not present then returns -1.
 // console.log(str.lastIndexOf("o"));
 // console.log(str.lastIndexOf("x"));
+
+//! reverse a words in a string
+
+// let str="I am a student"
+// console.log(str.length)
+// reverseWords(str)
+// function reverseWords(str){
+//    let arr=[];
+//     for (const words of str.split(" ")) {
+//         let rev="";
+//     for (const w of words ) {
+//         rev=w+rev;
+//     }
+//     arr.push(rev)
+    
+// }
+//     return arr.join(" ")
+// }
+// let result=reverseWords(str)
+// console.log(result+" "+result.length)
+
+//! another way
+// let str1="I am a student"
+// console.log(str1.length)
+// function reverseWords1(str){
+//     return str.split(" ").map(s=>s.split("").reverse().join("")).join(" ")
+// }
+// let result1=reverseWords1(str1)
+// console.log(result1+" "+result1.length)
