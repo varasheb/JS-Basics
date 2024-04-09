@@ -1,0 +1,12 @@
+The main difference between .js and .mjs files in Node.js lies in the module system they use.
+
+.js files: By default, these are treated as CommonJS modules, which use require and module.
+exports for importing and exporting modules. This is the original module system in Node.js.
+
+
+.mjs files: These are treated as ECMAScript (ES6) modules, which use import and export. 
+This system is a more recent standard and Node.js has added support for it to enable the use of modern JavaScript features.
+
+In essence, the .mjs extension explicitly tells Node.js to treat the file as an ES6 module,
+ while .js files are treated according to the project’s configuration, 
+ which is CommonJS by default unless specified otherwise in package.json1.
