@@ -63,3 +63,13 @@ import * as readline  from 'readline';
 //     console.log(`Thank you for your valuable feedback: ${answer}`);
 //     rl.close();
 // });
+
+function as(){
+    console.log(this)
+}
+as()
+
+let a=()=>{
+    console.log(this)
+}
+a()
