@@ -1,5 +1,6 @@
 
 //bublesort method
+//! Ascending order
 function bublesort(arr) {
     let n = arr.length;
     while (n > 0) {
@@ -19,6 +20,6 @@ function bublesort(arr) {
 }
 
 
-//example
+//example 1
 let arr = [5, 4, 3, 2, 1];
 console.log(bublesort(arr))
