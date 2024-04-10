@@ -73,17 +73,16 @@ const student = {
     city: 'Kingdom'
 };
 const {name, age, city} = student;
-console.log(name); // "King"
-console.log(age); // "38"
-console.log(city); // "Kingdom"
+console.log(name); 
+console.log(age); 
+console.log(city); 
 
 //ES6-5
 let sub = [3, 4, 5];
 let main = [1, 2, sub, 6];
-console.log(main);//[ 1, 2, [ 3, 4, 5 ], 6 ]
+console.log(main);
 main = [1, 2, ...sub, 6];//spread operation
-console.log(main);//[ 1, 2, 3, 4, 5, 6 ]
-
+console.log(main);
 //ES6-6
 const animal = 'Cat', length = 18, type = 'Domestic';
 
@@ -93,7 +92,7 @@ const customer = {
     length: length,
     type: type
 } 
-console.log(customer);// { animal: 'Cat', length: 18, type: 'Domestic' }
+console.log(customer);
 
 // After ES6, we can do it
 const newCustomer = {
@@ -101,7 +100,7 @@ const newCustomer = {
     length,
     type
 } 
-console.log(newCustomer);// { animal: 'Cat', length: 18, type: 'Domestic' }
+console.log(newCustomer);
 
 //ES7-1
 const num = [1,2,3,4,5,6,7,8,9];
@@ -110,14 +109,14 @@ console.log(num.includes(51));//false
 
 //ES7-2
 //Before
-console.log(Math.pow(5,3));//125
+console.log(Math.pow(5,3));
 //After
-console.log(5**3);//125
+console.log(5**3);
 
 //ES8-1
-console.log(Object.values(newCustomer));//[ 'Cat', 18, 'Domestic' ]
-console.log(Object.keys((newCustomer)));//[ 'animal', 'length', 'type' ]
-console.log(Object.entries((newCustomer)));//[ [ 'animal', 'Cat' ], [ 'length', 18 ], [ 'type', 'Domestic' ] ]
+console.log(Object.values(newCustomer));
+console.log(Object.keys((newCustomer)));
+console.log(Object.entries((newCustomer)))
 
 //ES8-2
 let str = '123';
@@ -146,9 +145,9 @@ solution.then((result)=>{
 
 //ES10-1
 let flat1 = [1,2,3,[4,5,6]];
-console.log(flat1.flat());//returns new array
+console.log(flat1.flat());
 let flat2 = [1,2,3,[4,5,[6]]];
-console.log(flat1.flat().flat());//[ 1, 2, 3, 4, 5, 6 ]
+console.log(flat1.flat().flat());
 
 //ES10-2
 let array = ["aj", "", "hjklbn"];
