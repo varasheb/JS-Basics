@@ -6,18 +6,18 @@ for (let i = 0; i < 5; i++) {
   }
 
 //? While loop 
-// let i = 0;
-// while (i < 5) {
-//   console.log(i);
-//   i++;
-// }
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
 
 //? do..while loop 
-// i = 0;
-// do {
-//   console.log(i);
-//   i++;
-// } while (i < 5);
+i = 0;
+do {
+  console.log(i);
+  i++;
+} while (i < 5);
 
 //? for..in loop 
 //? object
