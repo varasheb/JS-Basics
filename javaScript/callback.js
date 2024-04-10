@@ -31,3 +31,20 @@ const posNumbers = removeNeg(myNumbers, (x) => x >= 0);
 console.log(posNumbers)
 }
 
+//! Callback hell or primid of Doom
+function square(init, callback) {
+  const result = init**2;
+  callback(result);
+}
+
+function doOperation() {
+  square(2, (resultOne) => {
+    square(resultOne, (resultTwo) => {
+      square(resultTwo, (resultThree) => {
+        console.log(`result: ${resultThree}`);
+      });
+    });
+  });
+}
+
+doOperation();
