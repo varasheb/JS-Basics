@@ -1,11 +1,11 @@
-class Node {
+export class Node {
     constructor(data) {
         this.data = data;
         this.next = null;
     }
 }
 
-class CircularLinkedList {
+export class CircularLinkedList {
     constructor() {
         this.head = null;
         this.length = 0;
