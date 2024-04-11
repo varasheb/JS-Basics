@@ -127,17 +127,17 @@ arr.push(80)
 
 arr.print()
 
-// console.log(arr.pop())
-// arr.print()
+console.log(arr.pop())
+arr.print()
 
-// console.log(arr.slice(1,3))
+console.log(arr.slice(1,3))
 
-// console.log(arr.indexOf(20))
+console.log(arr.indexOf(20))
 
-// console.log(arr.lastIndexOf(20))
+console.log(arr.lastIndexOf(20))
 
-// arr.splice(1,2,2,3,4)
-// arr.print()
+arr.splice(1,2,2,3,4)
+arr.print()
 
 console.log(arr.join())
 
