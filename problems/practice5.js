@@ -33,27 +33,27 @@ class Complex {
   let b = new Complex(6, 2)
   a.add(b)
   console.log(`${a.real}+${a.imaginary}i`)
+  //!===========================================
+  class Human {
+    constructor(name, favfood) {
+      this.name = name
+      this.favfood = favfood
+    }
+    walk() {
+      console.log(this.name + "Human is walking")
+    }
+  }
   
-  // class Human {
-  //   constructor(name, favfood) {
-  //     this.name = name
-  //     this.favfood = favfood
-  //   }
-  //   walk() {
-  //     console.log(this.name + "Human is walking")
-  //   }
-  // }
+  class Student extends Human {
+    walk() {
+      console.log(this.name + ": Student is walking")
+    }
+  }
   
-  // class Student extends Human {
-  //   walk() {
-  //     console.log(this.name + ": Student is walking")
-  //   }
-  // }
+  let o = new Student("Harry", "Bhindi")
+  o.walk()
   
-  // let o = new Student("Harry", "Bhindi")
-  // o.walk()
-  
-  // console.log(o instanceof Human)
+  console.log(o instanceof Human)
 //!===========================================
   const a = async (text, n = 2) => {
     return new Promise((resolve, reject) => {
