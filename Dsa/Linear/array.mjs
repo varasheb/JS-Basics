@@ -49,6 +49,7 @@ export class Array{
     for(let i in this.arr){
         if(i>=startIndex){
             addElement[addElement.length]=this.arr[i]
+            this.length--;
         }
     }
     for (let i = 0; i < addElement.length; i++) {
@@ -59,6 +60,7 @@ export class Array{
     }
     join(space=","){
         let str=""
+        console.log(this.length)
      for(let i=0;i<this.length;i++){
         let ele=this.arr[i]
         if(this.arr[this.length-1]===ele){
