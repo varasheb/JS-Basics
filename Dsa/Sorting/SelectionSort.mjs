@@ -17,4 +17,4 @@ export function selectionSort(arr){
 }
 
 let  arr = [5, 4, 3, 2, 10];
-console.log(selectionSort(arr))
+console.log(" Selection Sort :",selectionSort(arr))
