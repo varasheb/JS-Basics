@@ -13,7 +13,7 @@ export class MyStack {
     
     pop() {
         if (this.isEmpty()) {
-            return "Underflow"; 
+          return new Error("UnderFlow");
         }
         this.top--;
         const poppedElement = this.data[this.top];
