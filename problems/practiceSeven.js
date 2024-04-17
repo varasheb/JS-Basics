@@ -57,3 +57,78 @@ console.log(reverseString())
 
 //! == and === not compitable with decimal number
 console.log((0.1+0.2)===0.3)//false
+
+//practice map() question
+let a = [1, 2, 3, 4, 5, 6, 7, 83]
+let n = a.map((x)=>{
+    return x*x
+})
+console.log(n)
+
+// practice filter() question
+let b = [1, 2, 30, 4, 50, 6, 7, 83, 670]
+n = b.filter((x)=>{
+    return x%10 == 0
+})
+console.log(n)
+
+// practice reduce() question
+n = b.reduce((accu,value)=>{
+    return accu+value
+})
+n = n/b.length
+
+console.log(n)
+
+// arrow function
+
+// let example=(x,x)=>{
+//     return x
+// }
+function examplefun(x,x){
+  return x
+}
+
+// call back
+function fetchDataCallback(callback){
+    setTimeout(()=>{
+    const data='hi i am data in callback'
+    callback(data)
+    },1000)
+}
+
+function processData(data){
+    console.log(data)
+}
+
+fetchDataCallback(processData)
+console.log('exit')
+
+// async
+function fetchDataAsync() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            const data = "hi i am data in async";
+            resolve(data);
+        }, 1000);
+    });
+}
+
+async function processDataAsync(){
+    const data =await fetchDataAsync()
+    return data
+}    
+processDataAsync().then((data)=>{console.log(data)})
+
+// promise
+
+function fetchData(){
+    return new Promise(function(resolve){
+        setTimeout(()=>{
+           const data='this the data with  delay using promise' 
+           resolve(data)
+        },1000)
+    })
+}
+
+fetchData().then((data)=>{console.log(data)})
