@@ -140,3 +140,6 @@ class employee{
 }
 let e=new employee("lulu")
 console.log(e.name)
+console.log('*************************')
+
+
