@@ -22,11 +22,11 @@ const person = {
   
 
   //? syntax
-  const objectName = {
-    member1Name: member1Value,
-    member2Name: member2Value,
-    member3Name: member3Value,
-  };
+//   const objectName = {
+//     member1Name: member1Value,
+//     member2Name: member2Value,
+//     member3Name: member3Value,
+//   };
   
 //! prototype
 // __defineGetter__(prop, getter): Defines a getter function for the specified property.
@@ -140,6 +140,3 @@ class employee{
 }
 let e=new employee("lulu")
 console.log(e.name)
-console.log('*************************')
-
-

@@ -1,4 +1,4 @@
-console.log("Hello World")
+
 
 exports.add=function add(a,b){
     return a+b
@@ -11,4 +11,7 @@ exports.mul=function mul(a,b){
 }
 exports.div=function div(a,b){
     return a/b
+}
+exports.pow=function div(a,b){
+    return a**b
 }
