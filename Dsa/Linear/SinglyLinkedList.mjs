@@ -161,28 +161,28 @@ export class LinkedList{
 }
 
 let mylist=new LinkedList()
-// mylist.add(10)
-// mylist.add(20)
-// mylist.add(30)
-// mylist.add(40)
-// mylist.add(50)
+mylist.add(10)
+mylist.add(20)
+mylist.add(30)
+mylist.add(40)
+mylist.add(50)
 
-//mylist.display()
-//console.log(mylist.size())
+mylist.display()
+console.log(mylist.size())
 
 //mylist.clear()
 
-//console.log(mylist.isEmpty())
+console.log(mylist.isEmpty())
 
-//console.log(mylist.search(40))
+console.log(mylist.search(40))
 
-//mylist.addFirst(5)
-//mylist.delete(5)
-//mylist.deleteLast()
-//mylist.deleteFirst()
+mylist.addFirst(5)
+mylist.delete(5)
+mylist.deleteLast()
+mylist.deleteFirst()
 
-//mylist.reverse()
-//mylist.insert(2,100)
+mylist.reverse()
+mylist.insert(2,100)
 
 mylist.display()
 
