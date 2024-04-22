@@ -63,3 +63,13 @@ fs.appendFile('javaScript/calci.js', 'console.log("Hello World")', (err) => {
 //     console.log(`Thank you for your valuable feedback: ${answer}`);
 //     rl.close();
 // });
+
+function as(){
+    console.log(this)
+}
+as()
+
+let a=()=>{
+    console.log(this)
+}
+a()

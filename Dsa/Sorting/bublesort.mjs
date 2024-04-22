@@ -1,24 +1,19 @@
 
 //bublesort method
-function bublesort(arr) {
-    let n = arr.length;
-    while (n > 0) {
-        let swapped = false;
-        for (let i = 0; i < n - 1; i++) {
-            if (arr[i] > arr[i + 1]) {
-                let tmp = arr[i];
-                arr[i] = arr[i + 1];
-                arr[i + 1] = tmp;
-                swapped = true;
+export function bubbleSort(arr) {
+    let len = arr.length;
+    for (let i = 0; i < len - 1; i++) {
+        for (let j = 0; j < len - 1 - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
             }
         }
-        if (!swapped) break;
-        n--;
     }
     return arr;
 }
 
 
-//example
-let arr = [5, 4, 3, 2, 1];
-console.log(bublesort(arr))
+let arr = [64, 34, 25, 12, 22, 11, 90];
+//console.log(" Bubble Sort :",bubbleSort(arr));
